@@ -44,12 +44,12 @@
                         <input type="password" placeholder="Contraseña">
                         <button>Entrar</button>
                     </form>
-                    <form action="resources/php/registro_usuario_be.php" class="formulario__register">
+                    <form action="resources/php/registro_usuario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrate</h2>
                         <input type="text" placeholder="Nombre Completo" name = "nombre_completo">
                         <input type="text" placeholder="Correo Electronico" name = "correo">
                         <input type="text" placeholder="Usuario" name = "user">
-                        <input type="password" placeholder="Contraseña" = "pass">
+                        <input type="password" placeholder="Contraseña" name = "pass">
                         <button>Registrarse</button>
                     </form>
                 </div>
