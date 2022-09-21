@@ -25,7 +25,7 @@
                     </div>
                 </a>
             </div>
-          </nav>
+        </nav>
     </header>
     <section>
         <div style="text-align: center;">
@@ -52,25 +52,9 @@
                     </div>
                     <div class="col-xs-10 col-sm-6 col-md-4 product">
                         <div class="card">
-                            <img src="resources/images/a0DyIs2SEHrYpciM1ideU1wv.jpg" alt="God Of War">
-                            <h3>
-                                God Of War
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-sm-6 col-md-4 product">
-                        <div class="card">
                             <img src="resources/images/download.jpg" alt="TEKKEN 7">
                             <h3>
                                 TEKKEN 7
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-sm-6 col-md-4 product">
-                        <div class="card">
-                            <img src="resources/images/EGS_TheBindingofIsaacRepentance_NicalisIncEdmundMcmillen_S2-1200x1600-eb480826546ffb2ed1560ceec262b615.jpg" alt="The Binding Of Isaac">
-                            <h3>
-                                The Binding Of Isaac
                             </h3>
                         </div>
                     </div>
