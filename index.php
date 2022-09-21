@@ -44,10 +44,12 @@
                         <input type="password" placeholder="Contraseña">
                         <button>Entrar</button>
                     </form>
-                    <form action="" class="formulario__register">
+                    <form action="resources/php/registro_usuario_be.php" class="formulario__register">
                         <h2>Regístrate</h2>
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Nombre Completo" name = "nombre_completo">
+                        <input type="text" placeholder="Correo Electronico" name = "correo">
+                        <input type="text" placeholder="Usuario" name = "user">
+                        <input type="password" placeholder="Contraseña" = "pass">
                         <button>Registrarse</button>
                     </form>
                 </div>
@@ -59,51 +61,3 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
-<?php
-	// Conexión con la base de datos
-	if(isset($_POST['btnEnviar'])) {
-		$conexion = mysqli_connect('localhost', 'root', '', 'perritosucb');
-
-		$usuario = $_POST['usuario'];
-		$password = $_POST['password'];	
-
-		// SELECT 
-
-		$sql = "SELECT * FROM usuario";
-		$result = mysqli_query($conexion, $sql);
-
-		$usuario_registrado = false;
-		$password_correcta = false;
-
-		while($mostrar = mysqli_fetch_array($result)){
-			if($usuario == $mostrar['user']){
-				$usuario_registrado = true;
-				if($password == $mostrar['pass']){
-					$password_correcta = true;
-				} else {
-					$password_correcta = false;
-				}
-			}
-		}
-
-		if($password_correcta){
-			header('Location: ingresar.php');
-		}
-
-		if($usuario_registrado && !$password_correcta){
-			?>
-			<script>
-				alert("Contraseña incorrecta");
-			</script>
-			<?php
-		}
-
-		if(!$usuario_registrado && !$password_correcta){ 
-			?>
-			<script>
-				alert("Usuario no registrado");
-			</script>
-			<?php
-		}
-	}
-?>
