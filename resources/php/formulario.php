@@ -1,7 +1,7 @@
 <?php
 	// Conexión con la base de datos
 
-	$conexion = mysqli_connect('localhost', 'root', '', 'gamestore');
+	$conexion = mysqli_connect("localhost", "root", "", "gamestore");
 
 	$nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
@@ -10,8 +10,8 @@
 
 	// INSERT INTO 
 
-	$sql="INSERT INTO contacto (id, nombre, apellido, cell, mail)
-			values (null, '$nombre', '$apellido', '$cell', '$mail')";
+	$sql="INSERT INTO contacto (nombre, apellido, cel, mail)
+			values ('$nombre', '$apellido', '$cell', '$mail')";
 			
 	echo mysqli_query($conexion, $sql);	
 ?>
