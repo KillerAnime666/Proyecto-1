@@ -15,14 +15,14 @@
         echo '
             <script>
                 alert("Usuario Registrado Exitosamente");
-                window.location = "../../index.php";
+                window.location = "../../login.php";
             </script>
         ';
     }else{
         echo '
             <script>
                 alert("Intentalo de nuevo, usuario no registrado");
-                window.location = "../../index.php";
+                window.location = "../../login.php";
             </script>
         ';
     }

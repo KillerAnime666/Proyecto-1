@@ -1,3 +1,26 @@
+.productos{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: auto;
+    padding-left: 14%;
+}
+.product img{
+    width: 250px;
+}
+.product h3{
+    font-size: 1.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card{
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0, 1px, 3px, rgba(0, 0, 0, 0.12), 0, 1px, 3px, rgba(0, 0, 0, 0.24);
+    width: 251px;
+    margin-top: 15px;
+    padding-bottom: 4px;
+}
+
 *{
     margin: 0;
     padding: 0;
